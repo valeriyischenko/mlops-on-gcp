@@ -31,7 +31,8 @@ from sklearn.preprocessing import StandardScaler
 def train_evaluate(job_dir, training_dataset_path, validation_dataset_path,
                    alpha, max_iter, hptune):
   """Trains the Covertype Classifier model."""
-
+  print('Training dataset: {}'.format(training_dataset_path))
+  print('Validation dataset: {}'.format(validation_dataset_path))
   df_train = pd.read_csv(training_dataset_path)
   df_validation = pd.read_csv(validation_dataset_path)
 
